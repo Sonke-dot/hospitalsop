@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital SOP Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>🏥 Hospital Standard Operating Procedures (SOPs)</h1>
+    <p>Access and review all operational guidelines for staff and departments</p>
+  </header>
+
+  <div class="container">
+    <h2>SOP Portal</h2>
+    <div class="sop-list">
+
+      <div class="card">
+        <h3>🔒 Security SOP</h3>
+        <p>Code: <strong>HOSP-SEC-001</strong></p>
+        <p>Guidelines for maintaining hospital security, visitor management, and incident reporting.</p>
+        <a href="security sop.html" class="btn open-btn">Open SOP</a>
+        <a class="btn" href="security sop.html"></a>
+        <label class="upload-btn">
+        📤 Upload SOP
+        <input type="file" accept="image/*,application/pdf" capture="environment" onchange="handleFileUpload(event)">
+        </label>
+      </div>
+
+      <div class="card">
+        <h3>📋 Administration SOP</h3>
+        <p>Code: <strong>HOSP-ADM-002</strong></p>
+        <p>Procedures for patient admissions, records, billing, and confidentiality compliance.</p>
+        <a href="administration sop.html" class="btn open-btn" >Open SOP</a>
+        <a class="btn" href="administration sop.html"></a>
+        <label class="upload-btn">
+        📤 Upload SOP
+        <input type="file" accept="image/*,application/pdf" capture="environment" onchange="handleFileUpload(event)">
+        </label>
+      </div>
+
+      <div class="card">
+        <h3>💻 IT & Infrastructure SOP</h3>
+        <p>Code: <strong>HOSP-IT-003</strong></p>
+        <p>Policies for system maintenance, cybersecurity, data backup, and user access control.</p>
+        <a href="IT & infrastructure management.html" class="btn open-btn" >Open SOP</a>
+         <a class="btn" href="IT & infrastructure management.html"></a>
+        <label class="upload-btn">
+        📤 Upload SOP
+        <input type="file" accept="image/*,application/pdf" capture="environment" onchange="handleFileUpload(event)">
+        </label>
+      </div>
+      </div>
+ 
+ <script>
+    function handleFileUpload(event) {
+      const file = event.target.files[0];
+      if (file) {
+        alert(`Uploaded: ${file.name}`);
+      }
+    }
+  </script>
+
+
+  <footer>
+    <p>© 2025 Hospital Management | Developed by SOP Team</p>
+  </footer>
+</body>
+</html>
